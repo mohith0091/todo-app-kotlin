@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddEditActivity">
+
+    <de.dlyt.yanndroid.oneui.layout.ToolbarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:expandable="true"
+        app:expanded="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitle="Designed by Mohith"
+        app:navigationIcon="@drawable/ic_oui_arrow_left"
+        app:title="TODO">
+
+        <de.dlyt.yanndroid.oneui.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TitleTextStyle"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title" />
+
+                    <EditText
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/title_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_backlground"
+                        android:hint="Enter The Title"
+                        android:maxLines="1"
+                        android:padding="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TitleTextStyle"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description" />
+
+                    <EditText
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/description_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="@drawable/edit_text_backlground"
+                        android:hint="Enter The Description"
+                        android:maxLines="5"
+                        android:minLines="3"
+                        android:padding="12dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/add_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/ButtonStyle.Colored"
+                    android:layout_marginTop="20dp"
+                    android:text="Add" />
+            </LinearLayout>
+        </de.dlyt.yanndroid.oneui.widget.NestedScrollView>
+
+
+    </de.dlyt.yanndroid.oneui.layout.ToolbarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
