@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         }
         getSourceCodeBtn.setOnClickListener {
             try {
-                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"))
+                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/mohith0091/todo-app-kotlin"))
                 startActivity(browserIntent)
             } catch (e: ActivityNotFoundException) {
                 Toast.makeText(
